@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odin Sign-up Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="banner">
+          <img
+            src="./assets/odin-lined.png"
+            class="'odin-logo"
+            alt="Odin logo"
+          />
+          <h1 class="odin">ODIN</h1>
+        </div>
+        <p>
+          Photo by
+          <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on
+          <a href="https://unsplash.com/photos/25xggax4bSA">Unsplash</a>
+        </p>
+      </div>
+      <div class="right">
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up now
+          to get started.
+        </p>
+        <p>You know you want to.</p>
+        <div class="wrapper">
+          <form action="/" method="POST" class="odin-form">
+            <fieldset>
+              <legend>Let's do this!</legend>
+              <div class="form-row">
+                <label for="first-name">FIRST NAME</label>
+                <input id="first-name" name="first-name" type="text" />
+              </div>
+              <div class="form-row">
+                <label for="last-name">LAST NAME</label>
+                <input id="last-name" name="last-name" type="text" />
+              </div>
+              <div class="form-row">
+                <label for="email">EMAIL</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="joe@example.com"
+                />
+              </div>
+              <div class="form-row">
+                <label for="phone">PHONE NUMBER</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                />
+              </div>
+              <div class="form-row">
+                <label for="pwd">PASSWORD</label>
+                <input type="password" id="pwd" name="pwd" />
+              </div>
+              <div class="form-row">
+                <label for="pwd">CONFIRM PASSWORD</label>
+                <input type="password" id="pwd" name="pwd" />
+              </div>
+              <div class="form-row">
+                <button>Create Account</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <p class="login">
+          Already have an account?
+          <a href="https://www.theodinproject.com/">Log in</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
